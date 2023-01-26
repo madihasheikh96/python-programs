@@ -32,7 +32,7 @@ def check_even_odd(random_list: list):
     return even_list, odd_list
 
 
-def check_prime_number(num: int):  # 50
+def check_prime_number(num: int) -> bool:
     if num == 1:
         return True
     for item in range(2, num):
