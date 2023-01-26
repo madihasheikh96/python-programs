@@ -3,10 +3,10 @@ import random
 
 def generate_random(counter=50, number_range=100) -> list:
     """
-    This method generates random numbers
+    This function generates random numbers
     :param number_range: range of the random number
     :param counter: length of random numbers
-    :return: list of random numbers
+    :return: list o f random numbers
     """
     r_list = []
     for i in range(counter):
@@ -16,6 +16,11 @@ def generate_random(counter=50, number_range=100) -> list:
 
 
 def check_even_odd(random_list: list):
+    """
+    This function returns odd and even number
+    :param random_list: list of random integers
+    :return: list of even and odd numbers
+    """
     even_list = []
     odd_list = []
     for number in random_list:
