@@ -32,10 +32,25 @@ def check_even_odd(random_list: list):
     return even_list, odd_list
 
 
+def check_prime_number(num: int):  # 50
+    if num == 1:
+        return True
+    for item in range(2, num):
+        if num % item == 0:
+            return False
+    return True
+
+
 if __name__ == '__main__':
-    random_numbers = generate_random(counter=300,number_range=2000)
+    random_numbers = generate_random(counter=300, number_range=2000)
     even, odd = check_even_odd(random_numbers)
     print(even)
     print(odd)
     print(f'type of the following variables is {type(random_numbers)} -- {type(even)} -- {type(odd)}')
     print(f'the length of the variables are {len(random_numbers)} -- {len(even)} -- {len(odd)}')
+
+    number = 4
+    if check_prime_number(number):
+        print(f'{number}  is prime')
+    else:
+        print(f'{number} is not prime')
