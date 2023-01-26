@@ -33,6 +33,11 @@ def check_even_odd(random_list: list):
 
 
 def check_prime_number(num: int) -> bool:
+    """
+    check if the number is prime or not
+    :param num: number to be checked
+    :return: boolean value for prime number
+    """
     if num == 1:
         return True
     for item in range(2, num):
