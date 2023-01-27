@@ -1,6 +1,4 @@
 import random
-from typing import List
-
 
 def random_numbers(counter=50, number_range=100) -> list:
     """
@@ -39,6 +37,11 @@ def check_even_odd_numbers(random_list: list) -> list:
 
 
 def prime_list(random_list: list) -> list:
+    """
+    creating prime number of whole random_list
+    :param random_list:
+    :return:
+    """
     prime_num = []
     for number in random_list:
         is_prime = True
